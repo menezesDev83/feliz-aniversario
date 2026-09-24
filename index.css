@@ -2,9 +2,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height:150vh;
+    min-height: 100vh;
     background-color: rgba(168, 167, 167, 0.6);
-  }
+    overflow-x: hidden;
+}
+  
   /*Create the card container*/
   .birthdayCard {
     position: relative;
@@ -240,22 +242,33 @@ body {
     color: #333;
   }
   
-  .name {
-    margin-left:150px;
+   .name {
+    margin-left: 150px;
+}
 
-    @media (max-width: 600px) {
+/* CELULAR */
+@media (max-width: 600px) {
 
     body {
         margin: 0;
-        padding: 20px 10px;
+        padding: 20px 0;
         min-height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
         overflow-x: hidden;
+        overflow-y: auto;
     }
 
     .birthdayCard {
-        transform: scale(0.7);
+        transform: scale(1.15);
         transform-origin: top center;
-        margin: 0 auto;
+        margin-top: 80px;
+        margin-bottom: 120px;
+    }
+
+    .name {
+        margin-left: 0;
     }
 }
-  }
+  
