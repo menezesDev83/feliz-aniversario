@@ -242,4 +242,20 @@ body {
   
   .name {
     margin-left:150px;
+
+    @media (max-width: 600px) {
+
+    body {
+        margin: 0;
+        padding: 20px 10px;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .birthdayCard {
+        transform: scale(0.7);
+        transform-origin: top center;
+        margin: 0 auto;
+    }
+}
   }
