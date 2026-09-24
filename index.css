@@ -270,5 +270,20 @@ body {
     .name {
         margin-left: 0;
     }
+
+    #openCard {
+    display: none;
+}
+
+#openCard:checked + .birthdayCard .cardFront {
+    transform: rotateY(-160deg);
+}
+
+#openCard:checked + .birthdayCard .front-text,
+#openCard:checked + .birthdayCard .wrap-deco,
+#openCard:checked + .birthdayCard .wrap-decoTwo,
+#openCard:checked + .birthdayCard .plate {
+    display: none;
+}
 }
   
